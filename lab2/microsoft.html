@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .main-banner {
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-banner .content {
+            max-width: 600px;
+        }
+
+        .main-banner h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main-banner p {
+            margin-bottom: 20px;
+        }
+
+        .main-banner button {
+            padding: 10px 20px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #0078D7;
+            font-weight: bold;
+        }
+
+        .categories div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 120px;
+        }
+
+        .categories img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            padding: 0 10px;
+            font-size: 0.9em;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Microsoft</div>
+        <nav>
+            <a href="#">Microsoft 365</a>
+            <a href="#">Office</a>
+            <a href="#">Windows</a>
+            <a href="#">Surface</a>
+            <a href="#">Deals</a>
+            <a href="#">Support</a>
+        </nav>
+    </header>
+
+    <div class="main-banner">
+        <div class="content">
+            <h1>Meet Surface Pro</h1>
+            <p>This laptop's unrivaled flexibility and AI features like Copilot enable you to do more than you ever imagined.</p>
+            <button>Shop now</button>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40" alt="Surface devices">
+            <a href="#">Shop Surface devices</a>
+        </div>
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40" alt="Xbox games and consoles">
+            <a href="#">Shop Xbox games and consoles</a>
+        </div>
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Accessories?wid=40&hei=40" alt="Accessories">
+            <a href="#">Shop for accessories</a>
+        </div>
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Business?wid=40&hei=40" alt="Business">
+            <a href="#">Shop for your business</a>
+        </div>
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icon-PC?wid=40&hei=40" alt="PC">
+            <a href="#">Find your next PC</a>
+        </div>
+        <div>
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40" alt="Microsoft 365">
+            <a href="#">Choose your Microsoft 365</a>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Sapphire-MC001?wid=380&hei=213&fit=crop" alt="Surface Laptop">
+            <h3>Surface Laptop, Copilot + PC</h3>
+            <p>Unlock AI features like Copilot and Creator to create an exceptional journey.</p>
+            <button>Shop now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-AI-7Ed-Platinum-MC006?wid=297&hei=167&fit=crop" alt="Save up to $460">
+            <h3>Save up to $460 on select Surface Laptop, Copilot+ PC</h3>
+            <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+            <button>Shop Microsoft 365</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-M365-Icons-Teams?wid=380&hei=213&fit=crop" alt="Xbox Series S">
+            <h3>Xbox Series S</h3>
+            <p>Next-gen performance in the smallest Xbox ever.</p>
+            <button>Shop Xbox Series S</button>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Xbox-Controller-Valentine-CP?wid=380&hei=213&fit=crop" alt="Xbox Controllers">
+            <h3>Xbox Controllers</h3>
+            <p>Elite wireless, adaptive - find the fit that's right for you.</p>
+            <button>Shop now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Microsoft. All rights reserved.</p>
+    </footer>
+</body>
+</html>
